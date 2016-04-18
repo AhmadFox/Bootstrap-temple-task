@@ -14,7 +14,7 @@ body {
 .collapse {margin-right: 4%;}
 
 #logoBrand {
-    background-image: url(../image/Logo.png);
+    background-image: url("../image/Logo.png");
     background-repeat: no-repeat;
     background-size: 45px;
     display: block;
