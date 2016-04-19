@@ -1,0 +1,244 @@
+@font-face {
+    font-family: Mxd3dFont;
+    src: url(../css/Ubuntu.ttf);
+}
+
+body {
+    font-family: Mxd3dFont;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.navbar-header {margin-left: 4%;}
+
+.collapse {margin-right: 4%;}
+
+#logoBrand {
+    background-image: url(/image/Logo.png);
+    background-repeat: no-repeat;
+    background-size: 45px;
+    display: block;
+    background-position: left;
+}
+
+#logoBrand:before {
+    content: "Mixed Dimensions Inc.";
+    color: #de5828;
+    font-family: Mxd3dFont;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 35px;
+}
+
+.padding-15 {
+    padding-top: 15px;
+}
+
+.margin-15 {
+    margin-top: -40px;
+}
+
+.align-center {
+    left: 50%;
+    transform: translate( -50%);
+}
+
+.container-width-50 {
+    position: fixed;
+    width: 40%;
+    min-width: 400px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.formBody {
+    border-color: rgba(51, 51, 51, 0);
+    border-radius: 10px;
+    background-color: #1c1c1c;
+}
+
+#formHead {
+    color: #de5828;
+    text-align: center;
+    font-weight: bold;
+}
+
+.termsContent {
+    height: 400px;
+    max-height: 500px;
+    overflow-y: auto;
+    background-color: #313131;
+    padding: 15px;
+}
+.termsContent p, strong{
+    color: #de5828;
+}
+
+.mxd3dText {
+    background-color: #313131;
+    border-color: #313131;
+    color: #de5828;
+    font-size: 15px;
+    transition: box-shadow 0.3s, border 0.3s;
+}
+.mxd3dText:focus, .mxd3dText .focus {
+  border: solid 1px #de5828;
+  box-shadow: 0 0 5px 1px rgba(222, 88, 40, 0.87);
+}
+.agree-text {
+    color: #9d9d9d;
+}
+.sub-header {
+    margin-left: 33px;
+    margin-right: 22px;
+}
+a:link, a:visited, a:hover, a:active {
+    color: #de5828;
+    text-decoration: none;
+}
+
+.MX3Dbtn, .MX3Dbtn:hover {
+    font-weight: bold;
+    color: #1c1c1c;
+    width: 200px;
+}
+/* Checkbox Style */
+/* Base for label styling */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 25px;
+  padding-top: 12px;
+  cursor: pointer;
+}
+
+/* checkbox */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left:0; top: 2px;
+  width: 20px; height: 20px;
+  border: 2px solid #6a6a6a;
+  background: rgba(248, 248, 248, 0);
+  border-radius: 2px;
+}
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content: '✔';
+  position: absolute;
+  top: 5px; left: 3px;
+  font-size: 18px;
+  line-height: 0.8;
+  color: #de5828;
+  transition:  0.2s;
+}
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+/* hover style just for information */
+label:hover:before {
+  border: 2px solid #de5828!important;
+  box-shadow: 0 0 5px 1px rgba(222, 88, 40, 0.87);
+}
+.font-social {
+    font-family: Mxd3dFont;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 14px;
+    display: none;
+}
+/* Font Icons Social Media */
+
+.socialbtns a:hover {
+    background-color: #444;
+	text-decoration: none;
+}
+
+.socialbtnsbtnsbtns, .socialbtnsbtnsbtns ul, .socialbtnsbtnsbtns li {
+	margin: 0;
+}
+
+.socialbtns li {
+    font-size:18px;
+}
+
+.socialbtns .fa {
+color: #888 !important;
+	transition: all ease 0.2s;
+	-moz-transition: all ease-in 0.2s;
+	-webkit-transition: all ease-in 0.2s;
+	-o-transition: all ease-in 0.2s;
+}
+
+.socialbtns .fa:hover {
+	color: #de5828 !important;
+	transition: all ease 0.2s;
+	-moz-transition: all ease-in 0.2s;
+	-webkit-transition: all ease-in 0.2s;
+	-o-transition: all ease-in 0.2s;
+}
+
+.socialbtns .fa:active {
+	color: #888 !important;
+}
+
+@media(max-width:767px){
+    .container-width-50 {width: 70%; min-width: 300px;}
+    .padding-name {padding-top: 10px;}
+    #formHead {font-size: 16px;}
+    #logoBrand {
+        background-size: 35px;
+        background-position: left;
+    }
+    #logoBrand:before {
+        font-size: 12px;
+        font-weight: bold;
+        margin-left: 20px;
+    }
+    .font-social {
+        display: block;
+        font-size: 14px;
+        margin-left: 40px;
+        margin-top: -18px;
+    }
+}
+/* background effict */
+.slide1, .slide2, .slide3 {
+	min-height: 100vh;
+	background-size: cover;
+	background-position: center center;
+}
+.slide1 {
+	background-image: url(../image/1.jpg);
+}
+.slide2 {
+	background-image: url(../image/2.jpg);
+}
+.slide3 {
+	background-image: url(../image/3.jpg);
+}
+/* Carousel Fade Effect */
+.carousel.carousel-fade .item {
+    opacity: .5;
+    -webkit-transition: opacity 1s ease-in;
+	-moz-transition: opacity 1s ease-in;
+	-ms-transition: opacity 1s ease-in;
+	-o-transition: opacity 1s ease-in;
+}
+.carousel.carousel-fade .active.item {
+	opacity: 1;
+}
